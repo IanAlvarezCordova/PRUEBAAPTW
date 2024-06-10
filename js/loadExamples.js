@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const examples = ['Modulo-1-GridSystem/grid-system.html', 'Modulo-2-Botones/botones.html', 'Modulo-3-Formularios/Formularios.html', 'Modulo-4-Tablas/Tablas.html', 'Modulo-5-BarraMenu/barra-menu.html', 'Modulo-6-Modal/Modal.html', 'Modulo-7-Icons/iconos.html', 'Modulo-8-Media/media.html']; // Añade más ejemplos aquí si es necesario
+    const examples = ['Modulo-1-GridSystem/Grid-System.html', 'Modulo-2-Botones/Botones.html', 'Modulo-3-Formularios/Formularios.html', 'Modulo-4-Tablas/Tablas.html', 'Modulo-5-BarraMenu/barra-menu.html', 'Modulo-6-Modal/Modal.html', 'Modulo-7-Icons/iconos.html', 'Modulo-8-Media/media.html']; // Añade más ejemplos aquí si es necesario
   
     const container = document.getElementById('examplesContainer');
   
