@@ -1,0 +1,59 @@
+<h2>Imágenes</h2>
+
+<p>
+    En este apartado, exploraremos las capacidades de <code>Bootstrap</code> para trabajar con imágenes. Una de las características destacadas de Bootstrap es su capacidad para crear imágenes responsivas, lo que significa que las imágenes se ajustan automáticamente al tamaño de la pantalla del dispositivo en el que se están visualizando. Esto mejora significativamente la experiencia del usuario en diferentes dispositivos, desde teléfonos móviles hasta computadoras de escritorio.
+</p>
+
+<div class="row" id="media">
+    <div class="col-xs-12 col-sm-4">
+        <img src="./img/ESPE1.png" class="img-responsive img-circle">
+        <p>Imagen con clase <code>img-circle</code>: Esta clase agrega un efecto de borde redondeado a la imagen, creando un círculo alrededor de ella.</p>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+        <img src="./img/ESPE1.png" class="img-responsive img-rounded">
+        <p>Imagen con clase <code>img-rounded</code>: Esta clase agrega bordes suavemente redondeados a la imagen, lo que proporciona una apariencia más suave.</p>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+        <img src="./img/ESPE1.png" class="img-thumbnail">
+        <p>Imagen con clase <code>img-thumbnail</code>: Esta clase agrega un borde y un sombreado alrededor de la imagen, creando un efecto de miniatura.</p>
+    </div>
+</div>
+
+<label for="claseImagen">Ingrese el tipo de clase (img-circle, img-rounded, img-thumbnail):</label>
+<input type="text" id="claseImagen" class="form-control" placeholder="Ej: img-circle, img-rounded, img-thumbnail">
+<br>
+<button type="button" class="btn btn-success" onclick="agregarVideo()">Agregar Video</button>
+<br><br>
+
+<div class="row" id="nuevoCodigo">
+    <!-- Aquí aparecerá el nuevo código generado por el usuario -->
+</div>
+
+<!-- Contexto de lo que se hizo con las imágenes -->
+<div class="row">
+    <div class="col-xs-12">
+        <h3>Muestra:</h3>
+        <div class="codigo-fuente">
+            <pre><code class="html">
+                <!-- Las imágenes se muestran en una fila -->
+                &lt;div class="row" id="media"&gt;
+                    <!-- Cada columna contiene una imagen con su clase correspondiente -->
+                    &lt;div class="col-xs-12 col-sm-4"&gt;
+                        &lt;img src="./img/ESPE1.png" class="img-responsive img-circle"&gt;
+                        &lt;p&gt;Imagen con clase &lt;code&gt;img-circle&lt;/code&gt;: Esta clase agrega un efecto de borde redondeado a la imagen, creando un círculo alrededor de ella.&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div class="col-xs-12 col-sm-4"&gt;
+                        &lt;img src="./img/ESPE1.png" class="img-responsive img-rounded"&gt;
+                        &lt;p&gt;Imagen con clase &lt;code&gt;img-rounded&lt;/code&gt;: Esta clase agrega bordes suavemente redondeados a la imagen, lo que proporciona una apariencia más suave.&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div class="col-xs-12 col-sm-4"&gt;
+                        &lt;img src="./img/ESPE1.png" class="img-thumbnail"&gt;
+                        &lt;p&gt;Imagen con clase &lt;code&gt;img-thumbnail&lt;/code&gt;: Esta clase agrega un borde y un sombreado alrededor de la imagen, creando un efecto de miniatura.&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            </code></pre>
+        </div>
+    </div>
+</div>
+
+<script src="media.js"></script>

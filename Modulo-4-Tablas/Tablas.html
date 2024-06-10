@@ -1,0 +1,69 @@
+<head>
+    
+  <!-- Highlight.js -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/monokai-sublime.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+</head>
+
+<h2>Tablas en Bootstrap</h2>
+
+<p>Las tablas en Bootstrap sirven para organizar y presentar datos de manera clara y estructurada. Utilizando la etiqueta <code>&lt;table&gt;</code> con clases como <code>.table</code>, <code>.table-striped</code>, y <code>.table-bordered</code>, podemos mejorar el diseño y la legibilidad de nuestras tablas. Los elementos clave incluyen <code>&lt;thead&gt;</code> para el encabezado, <code>&lt;tbody&gt;</code> para el cuerpo, <code>&lt;tr&gt;</code> para las filas, y <code>&lt;th&gt;</code> para las celdas de encab
+
+<!-- Tabla inicial -->
+<div class="tablas" id="tablas"> 
+<table class="table table-condensed table-bordered table-striped text-center">
+    <thead>
+    <tr class="aspecto">
+        <th>#</th>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Apellido</th>
+        <th>Twitter</th>
+        <th>Curso</th>
+    </tr>
+    </thead>
+    <tbody id="tablaCuerpo">
+    <tr>
+        <td>1</td>
+        <td>Irvin</td>
+        <td>Ortiz</td>
+        <td>Vega</td>
+        <td>@IrvinOrtiz28</td>
+        <td>Bootstrap 3</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Mayra</td>
+        <td>Villanueva</td>
+        <td>Ruiz</td>
+        <td>@MayraUsaV</td>
+        <td>CSS 3</td>
+    </tr>
+   
+    </tbody>
+</table>
+
+<!-- Formulario para cambiar el color de la cabecera -->
+<div class="form-group">
+    <label for="colorCabecera">Color de la cabecera:</label>
+    <input type="text" id="colorCabecera" class="form-control" placeholder="Ingrese un color (por ejemplo, red)"> <br>
+    <button id="cambiarColor" class="btn btn-primary">Cambiar Color</button>
+</div>
+
+<!-- Formulario para agregar una fila -->
+<div class="form-group">
+    <button id="agregarFila" class="btn btn-success">Agregar Fila</button>
+</div>
+
+<!-- Formulario para eliminar una fila -->
+<div class="form-group">
+    <button id="eliminarFila" class="btn btn-danger">Eliminar Fila</button>
+</div>
+
+<!-- Código fuente -->
+<pre><code id="codigoFuente" class="html"></code></pre>
+</div>
+<script src="tablas.js"></script>
+
+<hr class="salto">

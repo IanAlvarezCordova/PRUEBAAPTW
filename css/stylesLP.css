@@ -1,0 +1,113 @@
+body, html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    /* Fondo */
+    background: linear-gradient(rgba(34, 34, 34, 0.989), rgba(44, 62, 80, 0.967)), url('img/fondo.avif');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    padding: 20px 0;
+}
+
+.logo {
+    height: 150px;
+    margin-top: 20px;
+    
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.logoE {
+    height: 500;
+    margin-top: -100px;
+    margin-left: -100px;
+    transition: transform 0.3s ease;
+}
+
+.logoE:hover {
+    transform: scale(1.05);
+}
+
+.text-description {
+    /* Tipo de letra */
+    letter-spacing: 2px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.btn-custom {
+    background-color: #E10600;
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #C00000;
+    transform: scale(1.1);
+}
+
+.form-control {
+    background: transparent !important;
+    color: #fff !important;
+    border: 1px solid #fff !important;
+}
+
+a .fab, a .fas {
+    color: #fff;
+    font-size: 30px;
+    margin: 0 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover .fab, a:hover .fas {
+    color: #E10600;
+    transform: scale(1.2);
+}
+
+.list-inline-item {
+    margin: 0 10px;
+}
+
+/* Estilos para las fotos y nombres */
+.person-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.person-img:hover {
+    transform: scale(1.1);
+}
+
+.person-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+
+.person-name:hover {
+    color: #E10600;
+}
+
+h5 {
+    color: #E10600;
+    font-weight: bold;
+    font-size: 30px;	
+}

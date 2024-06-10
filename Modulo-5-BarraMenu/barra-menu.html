@@ -1,0 +1,60 @@
+<div class="barra-menu code" id="barra-menu">
+    <h2>Elementos de una barra de navegación</h2>
+    <p>Una barra de navegación es un componente fundamental en cualquier sitio web, ya que proporciona a los usuarios una forma intuitiva de explorar y acceder a diferentes partes del sitio. Tanto los elementos de barra como los de menú juegan un papel crucial en la usabilidad y la experiencia del usuario.</p>
+
+    <h3>Elementos de una barra de navegación Vertical</h3>
+    
+    <p>La barra de navegación vertical es una disposición común que presenta los enlaces de navegación de arriba hacia abajo. Utiliza la siguiente estructura de HTML:</p>
+    
+    <ul class="nav" id="nav-list">
+        <li><a href="#">Enlace 1</a></li>
+        <li><a href="#">Enlace 2</a></li>
+        <li><a href="#">Enlace 3</a></li>
+        <li><a href="#">Enlace 4</a></li>
+    </ul>
+    
+    <pre><code class="html">&lt;ul class="nav" id="nav-list"&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Enlace 1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Enlace 2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Enlace 3&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Enlace 4&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+    <div class="form-group">
+        <label for="newLinkVertical">Nuevo Enlace Vertical:</label>
+        <input type="text" class="form-control" id="newLinkVertical" placeholder="Ingrese el texto del enlace">
+    </div>
+    <button type="button" class="btn btn-primary" onclick="addNewLinkVertical()">Agregar Enlace Vertical</button>
+
+    <!-- Área de texto para mostrar el código fuente Vertical-->
+    <pre><code id="codeSnippetVertical" class="html"></code></pre>
+
+    <h3>Elementos de una barra de navegación Horizontal</h3>
+    <p>La barra de navegación horizontal es otra disposición común que presenta los enlaces de navegación de izquierda a derecha, a menudo en forma de botones. Utiliza la siguiente estructura de HTML:</p>
+    
+    <ul class="nav nav-pills" id="nav-list-horizontal">
+        <li ><a href="#">Enlace 1</a></li>
+        <li ><a href="#">Enlace 2</a></li>
+        <li><a href="#">Enlace 3</a></li>
+        <li><a href="#">Enlace 4</a></li>
+        <li><a href="#">Enlace 5</a></li>
+    </ul>
+    
+    <pre><code class="html">&lt;ul class="nav nav-pills" id="nav-list-horizontal"&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Enlace 1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Enlace 2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Enlace 3&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Enlace 4&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Enlace 5&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+    <div class="form-group">
+        <label for="newLinkHorizontal">Nuevo Enlace Horizontal:</label>
+        <input type="text" class="form-control" id="newLinkHorizontal" placeholder="Ingrese el texto del enlace">
+    </div>
+    <button type="button" class="btn btn-primary" onclick="addNewLinkHorizontal()">Agregar Enlace Horizontal</button>
+    <!-- Área de texto para mostrar el código fuente Horizontal-->
+    <pre><code id="codeSnippetHorizontal" class="html"></code></pre>
+</div>
+
+<script src="barra-menu.js"></script>

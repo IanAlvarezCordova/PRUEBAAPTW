@@ -1,0 +1,155 @@
+<h2>Formularios en Bootstrap</h2>
+<p>Los formularios en Bootstrap son una herramienta esencial para recopilar información y datos de los usuarios en una aplicación web. Bootstrap ofrece una serie de clases y componentes que facilitan enormemente la creación de formularios <strong>elegantes y funcionales</strong>, sin la necesidad de escribir una gran cantidad de CSS personalizado. Algunas de las características más destacadas de los formularios en Bootstrap son: la estructura del formulario, que se define mediante clases como <code>.form-horizontal</code> y <code>.form-group</code>; los <strong>estilos predefinidos</strong> para campos de entrada de texto, contraseñas, casillas de verificación, etc.; la <strong>validación de formularios</strong>, que se facilita con clases como <code>.has-error</code>, <code>.has-warning</code> y <code>.has-success</code>; la <strong>integración de iconos</strong> y ayudas visuales mediante iconos de Bootstrap; y el <strong>diseño responsivo</strong>, que garantiza que los formularios se vean bien y sean funcionales en una variedad de dispositivos y tamaños de pantalla.</p>
+<br>
+<div class="container col-md-6 col-md-offset-1">
+  <div class="formularios" id="formularios">
+    <div class="jumbotron">
+      <div class="form-group text-center">
+        <h2 style="color: palevioletred;">Formulario</h2>
+      </div>
+
+      <hr>
+
+      <!-- Formulario inicial -->
+      <form class="form-horizontal">
+        <div class="form-group input-group">
+            <span class="input-group-addon">
+                <span class="glyphicon glyphicon-user"></span>
+            </span>
+            <input type="user" class="form-control" name="user" placeholder="&#xf007; Nombre de usuario" required>
+          </div>
+
+        <div class="form-group input-group">
+            <span class="input-group-addon">
+                <span class="glyphicon glyphicon-inbox"></span>
+            </span>
+            <input type="email" class="form-control" name="email" placeholder="&#9000; Correo electronico" required>
+          </div>
+
+        <div class="form-group input-group">
+            <span class="input-group-addon">
+                <span class="glyphicon glyphicon-lock"></span>
+            </span>
+            <input type="password" class="form-control" name="password" placeholder="&#128272; Contraseña" required>
+        </div>
+
+        <div class="form-group input-group">
+            <span class="input-group-addon">
+                <span class="glyphicon glyphicon-repeat"></span>
+            </span>
+            <input type="password" class="form-control" name="password" placeholder=" Vuelve a ingresar la Contraseña" required>
+        </div>
+
+    
+
+        <!-- Botón de envío -->
+        <div class="form-group text-center">
+          <button class="btn btn-primary" style="padding-inline: 45%;">Enviar</button>
+        </div>
+
+        <!-- Enlace al olvido de contraseña -->
+        <div class="form-group text-right">
+          <a href="#">Olvidé mi contraseña</a>
+        </div>
+      </form>
+      <!-- Fin del formulario inicial -->
+    </div>
+  </div>
+
+  <div class="jumbotron">
+    <div class="form-group text-center">
+      <h2 style="color: chocolate;">Nuevo-Formulario</h2>
+    </div>
+  
+    <hr>
+  
+    <!-- Formulario inicial -->
+    <form class="form-horizontal" id="formularioInicial">
+        <!-- Campo para el usuario -->
+        <div class="form-group input-group">
+          <span class="input-group-addon">
+            <span class="glyphicon glyphicon-user"></span>
+          </span>
+          <input type="text" class="form-control" name="user" placeholder="&#xf007; Nombre de usuario" required>
+        </div>
+        <!-- CREAR NUEVO CAMPO AQUÍ -->
+        <div id="camposExtra"></div>
+        <!-- Botón de envío -->
+        <div class="form-group text-center">
+          <button class="btn btn-info" style="padding-inline: 45%;">Enviar</button>
+        </div>
+      </form>
+      <!-- Enlace al olvido de contraseña -->
+      <div class="form-group text-right">
+        <a href="#">Olvidé mi contraseña</a>
+      </div>
+      <!-- Botón para agregar más campos -->
+      <div class="form-group text-center">
+        <button class="btn btn-success" id="agregarCampo">Agregar Campo</button>
+      </div>
+      <!-- Fin del formulario inicial -->
+  
+  </div>
+
+
+</div>
+<script src="js/formularios.js"></script>
+
+<!-- Código fuente del formulario inicial -->
+<div>
+    <pre><code class="html">
+      &lt;form class="form-horizontal"&gt;
+        &lt;div class="form-group input-group"&gt;
+          &lt;span class="input-group-addon"&gt;
+            &lt;span class="glyphicon glyphicon-user"&gt;&lt;/span&gt;
+          &lt;/span&gt;
+          &lt;input type="email" class="form-control" name="user" placeholder="&#xf007; Nombre de usuario" required&gt;
+        &lt;/div&gt;
+  
+        <!-- Campo para correo electrónico -->
+        &lt;div class="form-group input-group"&gt;
+          &lt;span class="input-group-addon"&gt;
+            &lt;span class="glyphicon glyphicon-inbox"&gt;&lt;/span&gt;
+          &lt;/span&gt;
+          &lt;input type="email" class="form-control" name="email" placeholder="&#9000; Correo electrónico" required&gt;
+        &lt;/div&gt;
+  
+        <!-- Campo para contraseña -->
+        &lt;div class="form-group input-group"&gt;
+          &lt;span class="input-group-addon"&gt;
+            &lt;span class="glyphicon glyphicon-lock"&gt;&lt;/span&gt;
+          &lt;/span&gt;
+          &lt;input type="password" class="form-control" name="password" placeholder="&#128272; Contraseña" required&gt;
+        &lt;/div&gt;
+  
+        <!-- Campo para confirmación de contraseña -->
+        &lt;div class="form-group input-group"&gt;
+          &lt;span class="input-group-addon"&gt;
+            &lt;span class="glyphicon glyphicon-repeat"&gt;&lt;/span&gt;
+          &lt;/span&gt;
+          &lt;input type="password" class="form-control" name="password" placeholder="Vuelve a ingresar la Contraseña" required&gt;
+        &lt;/div&gt;
+        
+        <!-- Checkbox para recordar -->
+        &lt;div class="form-group" style="color: palevioletred;"&gt;
+          &lt;label&gt;
+            &lt;input type="checkbox"&gt;
+            Recuérdame
+          &lt;/label&gt;
+        &lt;/div&gt;
+  
+        <!-- Botón de envío -->
+        &lt;div class="form-group text-center"&gt;
+          &lt;button class="btn btn-primary" style="padding-inline: 45%;"&gt;Enviar&lt;/button&gt;
+        &lt;/div&gt;
+  
+        <!-- Enlace al olvido de contraseña -->
+        &lt;div class="form-group text-right"&gt;
+          &lt;a href="#"&gt;Olvidé mi contraseña&lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/form&gt;
+    </code></pre>
+  </div>
+  <hr class="salto">
+  <script src="formularios.js"></script>
+  

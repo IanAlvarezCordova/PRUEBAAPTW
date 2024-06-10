@@ -1,0 +1,50 @@
+<div class="Botones" id="Botones">
+
+    <h2>Botones en Bootstrap</h2>
+    <p>Los botones en Bootstrap son elementos fundamentales para interactuar con los usuarios en una aplicación web. Bootstrap proporciona una serie de clases predefinidas que permiten crear botones con diferentes estilos y colores. Estos botones pueden tener diferentes propósitos, como acciones normales, acciones destacadas, éxito, información, advertencias o peligros. Algunas de las clases de botones más comunes en Bootstrap incluyen <code>btn-default</code>, <code>btn-primary</code>, <code>btn-success</code>, <code>btn-info</code>, <code>btn-warning</code>, <code>btn-danger</code> y <code>btn-link</code>. Además, Bootstrap permite crear botones de diferentes tamaños utilizando las clases <code>btn-lg</code>, <code>btn-sm</code> y <code>btn-xs</code>, que proporcionan botones grandes, medianos y pequeños respectivamente. Para crear tu propio botón, simplemente elige una clase de botón de Bootstrap válida y agrégala al elemento <code>&lt;button&gt;</code> junto con el contenido del botón. Por ejemplo, <code>&lt;button class=&quot;btn btn-primary&quot;&gt;Mi botón&lt;/button&gt;</code>.</p>
+
+    <div>  
+        <h3>Botones informativos</h3>
+        <p>Los botones informativos en Bootstrap vienen en varios estilos predefinidos que se pueden usar para resaltar ciertos elementos de la interfaz de usuario. Puedes elegir entre diferentes colores para indicar diferentes tipos de mensajes:</p>
+        <button class="btn btn-default">Normal</button>
+        <button class="btn btn-primary">Destacado</button>
+        <button class="btn btn-success">Éxito</button>
+        <button class="btn btn-info">Información</button>
+        <button class="btn btn-warning">Advertencia</button>
+        <button class="btn btn-danger">Peligro</button>
+        <button class="btn btn-link">Enlace</button>
+        <br><br><pre><code>
+&lt;button class=&quot;btn btn-default&quot;&gt;Normal&lt;/button&gt;
+&lt;button class=&quot;btn btn-primary&quot;&gt;Destacado&lt;/button&gt;
+&lt;button class=&quot;btn btn-success&quot;&gt;Éxito&lt;/button&gt;
+&lt;button class=&quot;btn btn-info&quot;&gt;Información&lt;/button&gt;
+&lt;button class=&quot;btn btn-warning&quot;&gt;Advertencia&lt;/button&gt;
+&lt;button class=&quot;btn btn-danger&quot;&gt;Peligro&lt;/button&gt;
+&lt;button class=&quot;btn btn-link&quot;&gt;Enlace&lt;/button&gt;
+        </code></pre>
+        <p>Crea tu propio botón informativo ingresando una clase de botón de Bootstrap válida (por ejemplo, <code>btn-warning</code>, <code>btn-danger</code>, <code>btn-success</code>, <code>btn-primary</code>, <code>btn-info</code>, <code>btn-link</code>, etc.).</p>
+        <input type="text" id="infoButtonClass" placeholder="Clase del botón">
+        <button onclick="createInfoButton()" class="btn btn-primary">Crear Botón</button>
+        <div id="infoButtonResult"></div>
+    </div>  
+
+    <div >
+        <h3>Botones de diferentes tamaños</h3>
+        <p>Los botones en Bootstrap también pueden tener diferentes tamaños para adaptarse a las necesidades de diseño. Puedes elegir entre tres tamaños predefinidos:</p>
+        <button class="btn btn-primary btn-lg">Grande</button>
+        <button class="btn btn-primary btn-sm">Mediano</button>
+        <button class="btn btn-primary btn-xs">Pequeño</button>
+        <br><br><pre><code>
+&lt;button class=&quot;btn btn-primary btn-lg&quot;&gt;Grande&lt;/button&gt;
+&lt;button class=&quot;btn btn-primary btn-sm&quot;&gt;Mediano&lt;/button&gt;
+&lt;button class=&quot;btn btn-primary btn-xs&quot;&gt;Pequeño&lt;/button&gt;
+        </code></pre>
+        <p>Crea tu propio botón de tamaño personalizado ingresando el texto del botón y la clase de tamaño (por ejemplo, <code>btn-lg</code>, <code>btn-sm</code>, <code>btn-xs</code>):</p>
+        <input type="text" id="customButtonText" placeholder="Texto del botón">
+        <input type="text" id="customButtonSize" placeholder="Tamaño del botón">
+        <button onclick="createCustomButton()" class="btn btn-primary">Crear Botón</button>
+        <div id="customButtonResult"></div>
+    </div>
+</div>
+<hr class="salto">
+<script src="Botones.js"></script>

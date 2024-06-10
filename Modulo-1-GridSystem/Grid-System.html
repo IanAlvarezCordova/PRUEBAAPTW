@@ -1,0 +1,47 @@
+
+<div class="grid-system" id="grid-system">
+<body>
+
+   
+  <h2>Grid System en Bootstrap</h2>
+  <p>El Grid System de Bootstrap es un sistema de cuadrícula que permite crear diseños responsivos mediante el uso de filas y columnas. Las filas se crean utilizando la clase <code>.row</code> y las columnas se crean utilizando clases como <code>.col-md-*</code>, donde <code>*</code> es el número de columnas que ocupará el elemento. Además, podemos usar la clase <code>.col-md-offset-*</code> para desplazar columnas a la derecha.</p>
+
+  <div class="row">
+    <div class="col-md-4 column" style="background-color: red;">Columna 1 <br>Columna 1<br>Columna 1</div>
+    <div class="col-md-4 column" style="background-color: blue;">Columna 2<br>Columna 2<br>Columna 2</div>
+  </div>
+  <br>
+  
+  <div class="row">
+    <div class="col-md-4">
+      <input type="number" id="offsetInput" placeholder="Ingrese número de desplazamiento" class="form-control">
+    </div>
+    <div class="col-md-4">
+      <button id="applyOffset" class="btn btn-primary">Aplicar Desplazamiento</button>
+    </div>
+  </div>
+  
+  <!-- Contenedor para mostrar el código -->
+  <h3>Grid-System:</h3>
+  <pre><code class="html">
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-md-4 column&quot;&gt;Columna 1&lt;br&gt;Columna 1&lt;br&gt;Columna 1&lt;br&gt; &lt;/div&gt;
+  &lt;div class=&quot;col-md-4 column&quot;&gt;Columna 2&lt;br&gt;Columna 2&lt;br&gt;Columna 2&lt;br&gt; &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-md-4&quot;&gt;
+    &lt;input type=&quot;number&quot; id=&quot;offsetInput&quot; placeholder=&quot;Ingrese número de desplazamiento&quot; class=&quot;form-control&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-md-4&quot;&gt;
+    &lt;button id=&quot;applyOffset&quot; class=&quot;btn btn-primary&quot;&gt;Aplicar Desplazamiento&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+  </code></pre>
+  
+
+
+<!-- Script para el Grid System -->
+<script src="grid-system.js"></script>
+<hr class="salto">
+
+</div>

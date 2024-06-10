@@ -1,0 +1,87 @@
+<div class="Modal" id="Modal">
+    <h2>Modal BootStrap</h2>
+    <p>Los modales en Bootstrap son ventanas emergentes que se utilizan para mostrar contenido importante de manera interactiva. Son útiles para capturar la atención del usuario y solicitar interacciones adicionales, como ingresar datos en formularios o confirmar acciones críticas. Los modales pueden contener diversos elementos, como encabezados, cuerpos de texto, formularios, botones y pies de página.</p>
+
+<p>En el código HTML del modal, se utilizan las siguientes etiquetas y clases de Bootstrap:</p>
+
+<ul>
+    <li><code>&lt;div class="modal fade" id="miModal"&gt;</code>: Define el contenedor principal del modal y le asigna un ID único para su identificación.</li>
+    <li><code>&lt;div class="modal-dialog"&gt;</code>: Define el área del diálogo del modal, que alberga el contenido del modal.</li>
+    <li><code>&lt;div class="modal-content"&gt;</code>: Contiene todo el contenido del modal, incluidos el encabezado, el cuerpo y el pie de página.</li>
+    <li><code>&lt;div class="modal-header"&gt;</code>: Contiene el encabezado del modal, que generalmente incluye el título y el botón de cierre.</li>
+    <li><code>&lt;div class="modal-body"&gt;</code>: Contiene el cuerpo del modal, donde se coloca el contenido principal, como formularios o mensajes.</li>
+    <li><code>&lt;div class="modal-footer"&gt;</code>: Contiene el pie de página del modal, que puede contener botones de acción o de cierre.</li>
+    <li><code>&lt;button class="btn btn-primary"&gt;</code>: Define un botón de acción primario con el estilo de Bootstrap.</li>
+    <li><code>&lt;button class="btn btn-default" data-dismiss="modal"&gt;</code>: Define un botón secundario con el estilo de Bootstrap que cierra el modal cuando se hace clic en él.</li>
+</ul>
+
+<p>Con estas etiquetas y clases de Bootstrap, puedes crear fácilmente modales atractivos y funcionales para mejorar la experiencia del usuario en tu sitio web.</p>
+
+    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#miModal">Presionar</button>
+
+    <div class="modal fade" id="miModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" aria-hidden="true" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Título del Modal</h4>
+                </div>
+
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="usuario">Usuario</label>
+                            <input type="text" placeholder="usuario" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="contraseña">Contraseña</label>
+                            <input type="text" placeholder="contraseña" class="form-control">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn-primary">Aceptar</button> <button class="btn btn-default" data-dismiss="modal">Cancelar</button>                           
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="btn btn-warning btn-lg" onclick="addNewModal()">Agregar Nuevo Modal</button>
+
+    <!-- Área de texto para mostrar el código fuente del modal -->
+<pre><code class="html">&lt;div class="modal fade" id="miModal"&gt;
+    &lt;div class="modal-dialog"&gt;
+        &lt;div class="modal-content"&gt;
+            &lt;div class="modal-header"&gt;
+                &lt;button class="close" aria-hidden="true" data-dismiss="modal"&gt;&times;&lt;/button&gt;
+                &lt;h4 class="modal-title"&gt;Título del Modal&lt;/h4&gt;
+            &lt;/div&gt;
+
+            &lt;div class="modal-body"&gt;
+                &lt;form&gt;
+                    &lt;div class="form-group"&gt;
+                        &lt;label for="usuario"&gt;Usuario&lt;/label&gt;
+                        &lt;input type="text" placeholder="usuario" class="form-control"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="form-group"&gt;
+                        &lt;label for="contraseña"&gt;Contraseña&lt;/label&gt;
+                        &lt;input type="text" placeholder="contraseña" class="form-control"&gt;
+                    &lt;/div&gt;
+                &lt;/form&gt;
+            &lt;/div&gt;
+
+            &lt;div class="modal-footer"&gt;
+                &lt;button class="btn btn-primary"&gt;Aceptar&lt;/button&gt; &lt;button class="btn btn-default" data-dismiss="modal"&gt;Cancelar&lt;/button&gt;                           
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+<!-- Área donde se mostrarán los modales -->
+<div id="modalContainer"></div>
+
+<script src="modal.js"></script>
+
+<br class="salto">
+
+
